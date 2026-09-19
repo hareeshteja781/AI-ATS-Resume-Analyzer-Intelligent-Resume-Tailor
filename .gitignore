@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node / React
+node_modules/
+dist/
+.vite/
+
+# Next.js - not used, but harmless if generated accidentally
+.next/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
