@@ -1,28 +1,45 @@
 # Python
 __pycache__/
 *.py[cod]
-.venv/
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Environment variables
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
 .env
 .env.*
 !.env.example
 
-# Node / React
+# Node
 node_modules/
 dist/
 .vite/
 
-# Next.js - not used, but harmless if generated accidentally
-.next/
-
-# Test / coverage
-.pytest_cache/
-.coverage
-htmlcov/
-
 # IDE
 .vscode/
+.idea/
 
 # OS
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Generated files
+uploads/
+outputs/
+
+# Coverage
+.coverage
+htmlcov/
