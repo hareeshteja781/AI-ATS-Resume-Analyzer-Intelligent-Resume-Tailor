@@ -1,34 +1,43 @@
 # AI ATS Resume Analyzer & Intelligent Resume Tailor
 
-A production-style web application that analyzes resumes against job descriptions, evaluates ATS compatibility, and intelligently tailors resumes while preserving the user's original content and document design.
+An AI-powered full-stack application that analyzes resumes against job descriptions, evaluates ATS compatibility, and tailors resume content while preserving the original document design.
 
-## Current Status
+## Features
+- Resume upload and parsing for PDF and DOCX
+- Job description analysis and keyword matching
+- ATS compatibility and section-level analysis
+- AI-assisted resume tailoring
+- Tailoring comparison and resume versioning
+- Validation of AI-generated suggestions
+- Role benchmarking and job-match analysis
+- Embeddings and vector search
 
-Project foundation is being built incrementally.
+## Tech Stack
+- Frontend: React, TypeScript, Vite, React Router, React Query, Tailwind CSS
+- Backend: Python, FastAPI, SQLAlchemy, Pydantic, JWT
+- AI: Gemini API, embeddings, vector search
+- Data: PostgreSQL, pgvector, Redis, Cloudflare R2
+- Background jobs: Celery
+- DevOps: Docker
 
-### Backend
-- Python
-- FastAPI
-- SQLAlchemy
-- PostgreSQL
-- Pydantic Settings
-
-### Planned Architecture
-- React + Vite frontend
-- FastAPI backend
-- Celery worker
-- Redis
-- PostgreSQL + pgvector
-- Gemini API
-- Cloudflare R2
-
-## Project Structure
-
+## Architecture
 ```text
-resume-ats-platform/
-├── backend/
-├── frontend/
-├── worker/
-├── tests/
-├── docs/
-└── README.md
+frontend/   React + TypeScript
+backend/    FastAPI API, models, services, and routes
+worker/     Celery background processing
+tests/      Automated tests
+docs/       Project documentation
+```
+
+## Run Locally
+```bash
+docker compose up --build
+```
+
+Configure the required environment variables using the repository environment example files.
+
+## Testing
+```bash
+cd backend
+pytest
+```
